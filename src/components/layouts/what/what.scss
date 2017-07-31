@@ -1,0 +1,339 @@
+.what {
+  padding: 25px 0 25px;
+
+
+  h1 {
+    font-size: 1.35rem;
+    color: $greenHeader;
+    font-family: "Fregat Bold";
+    text-transform: uppercase;
+    line-height: 1.55rem;
+    text-align: center;
+    letter-spacing: 0.1px;
+  }
+
+  .what_subhead {
+    padding: 15px 1%;
+    font-family: "PT Sans";
+    font-size: 1rem;
+    color: $grey;
+    line-height: 1.3rem;
+    letter-spacing: -0.45px;
+    text-align: center;
+  }
+}
+
+.col-6.arrow-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  width: 30px;
+  height: 30px;
+  border-radius: 35px;
+  border: 1px solid $greenBtn;
+}
+
+.arrow.left {
+  background: url(../img/slider_arr_left.png) no-repeat center center;
+  background-size: contain;
+
+  &:hover {
+    margin-left: -3px;
+  }
+}
+
+.arrow.right {
+  background: url(../img/slider_arr_right.png) no-repeat center center;
+  background-size: contain;
+
+  &:hover {
+    margin-left: 3px;
+  }
+}
+
+.col-12.slider-hider {
+  overflow: hidden;
+  margin-top: 10px;
+  padding: 0;
+  order: 1;
+}
+
+.sliders {
+  width: 301%;
+  position: relative;
+  left: 0;
+}
+
+.slide {
+  margin: 0;
+  height: 220px;
+  width: 33.05%;
+  display: inline-block;
+  background-size: cover;
+  font-size: 0;
+}
+
+.slide.first {
+  background: url("../img/slide1.jpg") center center no-repeat;
+  background-size: cover;
+}
+
+.slide.second {
+  background-color: #00b3ff;
+  //background: url("../img/hero_bckgr.png") center center no-repeat;
+}
+
+.slide.third {
+  background-color: #4cb027;
+}
+
+.row.slider_nav {
+  margin-top: -30px;
+  margin-bottom: 30px;
+}
+
+.slider_nav {
+  display: flex;
+  align-items: center;
+}
+
+.col.slider_nav_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slider_nav_item {
+  width: 15px;
+  height: 15px;
+  margin: 0 7.5px;
+  border-radius: 8px;
+  border: 1px solid $white;
+}
+
+.slider_nav_item.active {
+  background-color: $white;
+}
+
+.stages {
+  .col-5 {
+    padding: 25px 0 31px;
+  }
+}
+
+.stage {
+  padding-bottom: 12px;
+  font-family: "PT Sans";
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+  .tick {
+    color: $greenHeader;
+    font-size: 1.5rem;
+  }
+
+  .stage_text {
+    padding-left: 0.7rem;
+    font-family: "PT Sans";
+    color: $mediumGrey;
+    font-size: 0.9rem;
+    text-align: left;
+    line-height: 1.15rem;
+    letter-spacing: -0.3px;
+  }
+}
+
+.comments {
+  padding: 10px 0;
+  .comment {
+    font-family: "PT Sans";
+    color: $lightestGrey;
+    font-size: 0.9rem;
+    text-align: center;
+    line-height: 1.15rem;
+    letter-spacing: -0.3px;
+  }
+}
+
+@media (min-width: 576px) {
+//@media (min-width: 768px) {
+  .what {
+    padding: 63px 0 30px;
+    .container {
+      width: 1185px;
+    }
+
+    h1 {
+      margin-left: -5px;
+      font-size: 1.95rem;
+      line-height: 2.15rem;
+    }
+
+    .what_subhead {
+      padding: 27px 8%;
+      font-size: 1.25rem;
+      line-height: 1.7rem;
+    }
+  }
+
+  .arrow {
+    width: 66px;
+    height: 66px;
+    border-radius: 35px;
+  }
+
+  .col-12.slider-hider {
+    order: initial;
+  }
+
+  .slide {
+    height: 650px;
+    width: 33.2%;
+  }
+
+  .row.slider_nav {
+    margin-top: -66px;
+    margin-bottom: 66px;
+  }
+
+  .slider_nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .col.slider_nav_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .slider_nav_item {
+    width: 15px;
+    height: 15px;
+    margin: 0 7.5px;
+    border-radius: 8px;
+  }
+
+  .stages {
+    .col-5 {
+      padding: 25px 0 31px;
+    }
+  }
+
+  .stage {
+    padding-bottom: 12px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    .tick {
+      font-size: 1.5rem;
+    }
+
+    .stage_text {
+      padding-left: 0.7rem;
+      padding-right: 2rem;
+      font-size: 0.95rem;
+      text-align: left;
+      line-height: 1.4rem;
+      letter-spacing: -0.3px;
+    }
+  }
+
+  .comments {
+    .comment {
+      font-size: 0.95rem;
+      line-height: 1.4rem;
+      letter-spacing: -0.3px;
+    }
+  }
+}
+
+//тут все ок, оставить так
+@media (min-width: 992px) and (max-width: 1199px) {
+  .arrow {
+    width: 53px;
+    height: 53px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  //учесть все, что отличается здесь и оставить, а остальное включить в медиа кверис большую
+  .arrow {
+    width: 34px;
+    height: 34px;
+  }
+
+  .slide {
+    height: 450px;
+  }
+
+  .row.slider_nav {
+    margin-top: -28px;
+    margin-bottom: 28px;
+  }
+
+  .stages {
+    .col-5 {
+      padding: 15px 0;
+    }
+  }
+
+  .col-12.slider-hider {
+    order: initial;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .what {
+    padding: 30px 0;
+
+    .what_subhead {
+      padding: 15px 3%;
+    }
+  }
+
+  .arrow {
+    width: 18px;
+    height: 18px;
+    background-size: contain;
+  }
+
+  .slide {
+    height: 300px;
+    width: 33.15%;
+  }
+
+  .col-12.slider-hider {
+    order: initial;
+  }
+
+  .row.slider_nav {
+    margin-top: -28px;
+    margin-bottom: 28px;
+  }
+
+  .stages {
+    padding-bottom: 15px;
+    .col-sm-10 {
+      padding: 0;
+    }
+  }
+
+  .stage {
+    .stage_text {
+      padding-right: 0;
+      font-size: 1.15rem;
+    }
+  }
+
+  .comments {
+    .comment {
+      font-size: 1.1rem;
+    }
+  }
+}

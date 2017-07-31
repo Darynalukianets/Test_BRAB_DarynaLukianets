@@ -1,0 +1,37 @@
+@import "base/_module.scss";
+@import "helpers/_module.scss";
+@import "../../components/layouts/_module.scss";
+
+.page-container {
+  margin: 0 auto;
+  max-width: 1365px;
+  overflow: hidden;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+
+
+

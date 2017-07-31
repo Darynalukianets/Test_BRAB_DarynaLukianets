@@ -1,0 +1,165 @@
+//mobile first
+.hero {
+  padding: 27px 0 20px;
+  background-color: $lightMint;
+  background-repeat: no-repeat;
+
+  h1 {
+    font-size: 1.35rem;
+    color: $greenHeader;
+    font-family: "Fregat Bold";
+    text-transform: uppercase;
+    line-height: 1.55rem;
+    text-align: center;
+  }
+
+  p {
+    padding-top: 15px;
+    font-family: "PT Sans";
+    font-size: 1.25rem;
+    color: $lightGrey;
+    letter-spacing: -0.45px;
+    text-align: center;
+  }
+}
+
+.enroll, .more {
+  height: 46px;
+  width: 255px;
+  display: block;
+  margin: 10px auto;
+  font-family: "PT Sans";
+  font-size: 0.9rem;
+  border-radius: 3px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.enroll {
+  padding: 20px 0;
+  background-color: $greenBtn;
+  color: $white;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    background-color: $lightGreen;
+    color: $white;
+  }
+
+
+}
+
+.more {
+  padding: 18px 0;
+  border: 2px solid $greenBtn;
+  color: $greenBtn;
+
+  &:hover {
+    text-decoration: none;
+    opacity: 0.8;
+    color: $lightGreen;
+    border: 2px solid $lightGreen;
+  }
+}
+
+
+@media (min-width: 1200px) {
+  .hero {
+    padding: 109px 0 85px;
+    background-image: url("../img/hero_bckgr.png");
+    background-position: center right;
+  }
+
+  .enroll {
+    width: 178px;
+    margin: 79px 7px 0;
+  }
+
+  .more {
+    width: 255px;
+    margin: 79px 25px 0;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+  .hero {
+    padding: 109px 0 85px;
+    background-image: url("../img/hero_bckgr.png");
+    background-position: 500px center;
+  }
+
+  .enroll {
+    width: 178px;
+    margin: 79px 7px 0;
+  }
+
+  .more {
+    width: 215px;
+    margin: 79px 25px 0;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hero {
+    padding: 66px 0 66px;
+    background-image: url("../img/hero_bckgr.png");
+    background-position: 350px center;
+  }
+
+  .more {
+    width: 180px;
+    margin: 16px 25px 0;
+  }
+
+  .enroll {
+    width: 100px;
+    margin: 16px 7px 0;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .hero {
+    padding: 30px 0 30px;
+    background-image: url("../img/hero_bckgr.png");
+    background-position: 285px center;
+    background-size: contain;
+
+    p {
+      line-height: 1.65rem;
+    }
+
+  }
+
+  .more, .enroll {
+    padding-top: 15px;
+    width: 180px;
+    margin: 16px 0 0;
+  }
+}
+
+@media (min-width: 576px) {
+  .hero {
+    .container {
+      width: 1185px;
+    }
+
+    h1 {
+      font-size: 1.75rem;
+      line-height: 2.15rem;
+      text-align: left;
+    }
+
+    p {
+      padding-top: 30px;
+      padding-right: 3.8rem;
+      text-align: left;
+    }
+  }
+
+  .enroll, .more {
+    display: inline-block;
+  }
+}

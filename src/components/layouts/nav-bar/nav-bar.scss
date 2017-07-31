@@ -1,0 +1,179 @@
+.container.nav-bar {
+  color: $darkGrey;
+  text-transform: uppercase;
+
+  //только в мобильном, обнуляется в остальных
+  .logo-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.col.nav-box {
+  display: flex;
+  padding: 0;
+  align-items: center;
+}
+
+.logo {
+  font-size: 2.8rem;
+  font-family: "Fregat Bold";
+  text-align: left;
+}
+
+.nav-icon {
+  display: inline-block;
+  height: 33px;
+  width: 31px;
+  background-color: $formText;
+  border-radius: 1px;
+
+  .stripe {
+    width: 21px;
+    height: 4px;
+    margin: 5px auto;
+    background-color: $white;
+    border-radius: 5px;
+  }
+}
+
+.nav {
+  font-family: "Fregat Regular";
+  font-size: 0.85rem;
+
+  ul {
+    text-align: center;
+    margin: 20px auto;
+    border: 2px solid $lightestGrey;
+    border-radius: 6px;
+  }
+
+  li {
+    display: block;
+    padding: 5px 0;
+
+    a:hover {
+      color: $lightGrey;
+      text-decoration: none;
+      font-weight: 700;
+    }
+  }
+
+  .separator {
+    display: none;
+  }
+}
+
+@keyframes showMobileNav {
+  from {
+    display: none;
+    opacity: 0;
+  }
+  50% {
+    display: block;
+    opacity: 0.5;
+  }
+  to {
+    display: block;
+    opacity: 1;
+  }
+}
+
+.nav.shown {
+  animation: showMobileNav 2s;
+}
+
+.nav.hidden {
+  display: none;
+}
+
+@media (min-width: 1200px) {
+
+  .nav {
+
+    ul {
+      text-align: initial;
+    }
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  //определить что делал этот стиль и применяется ли он
+  .col.nav-box {
+    margin-left: -30px;
+  }
+
+  .nav {
+
+    ul {
+      text-align: initial;
+    }
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container.nav-bar {
+
+    .col-md-12 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .nav {
+    font-size: 0.82rem;
+
+    ul {
+      text-align: initial;
+    }
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .container.nav-bar {
+
+    .col-sm-12 {
+      display: flex;
+      justify-content: center;
+    }
+  }
+
+  .nav {
+    padding-top: 10px;
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 576px) {
+  .container.nav-bar {
+    width: 1185px;
+    padding: 23px 0 17px;
+  }
+
+  .nav-icon {
+    display: none;
+  }
+
+  .nav.hidden {
+    display: block;
+  }
+
+  .nav {
+
+    ul {
+      margin: 0;
+      border: none;
+    }
+
+    li {
+      display: inline-block;
+      padding: 0;
+    }
+
+    .separator {
+      display: inline-block;
+    }
+  }
+}
+

@@ -1,0 +1,14 @@
+.footer {
+  padding: 29px 0 13px;
+  background-color: $footerGrey;
+  color: $white;
+  font-family: "PT Sans";
+  font-size: 0.7rem;
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .footer {
+    padding: 21px 0 13px;
+    font-size: 1rem;
+  }
+}

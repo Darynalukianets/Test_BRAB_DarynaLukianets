@@ -1,0 +1,252 @@
+
+.callback {
+  padding-top: 25px;
+
+  h1 {
+    font-size: 1.35rem;
+    color: $greenHeader;
+    font-family: "Fregat Bold";
+    text-transform: uppercase;
+    line-height: 1.55rem;
+    text-align: center;
+    letter-spacing: 0.3px;
+  }
+
+  p {
+    padding-top: 15px;
+    font-family: "PT Sans";
+    color: $lightestGrey;
+    font-size: 1.05rem;
+    text-align: center;
+    line-height: 1.4rem;
+    letter-spacing: 0px;
+  }
+
+  .col.form {
+    padding: 0;
+  }
+}
+
+.branches {
+  display: flex;
+  flex-direction: column;
+  padding: 14px 15px 14px;
+}
+
+.branch {
+   padding-bottom: 15px;
+
+  .city, .adress, .phone {
+    padding-top: 0;
+    color: $contactsGrey;
+    font-family: "PT Sans";
+    text-align: center;
+
+  }
+
+  .city {
+    font-size: 1.33rem;
+    line-height: 1.4rem;
+  }
+
+  .adress {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .phone {
+    font-size: 1rem;
+    line-height: 1.1rem;
+  }
+}
+
+.reception {
+  padding-top: 35px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
+  div {
+    text-align: center;
+  }
+}
+
+.reception-label {
+  display: block;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  font-family: "PT Sans";
+  color: $formLabels;
+  font-size: 1rem;
+  font-weight: 700;
+}
+
+.city-select, .name-input, .phone-input {
+  display: block;
+  margin: 0 auto;
+  padding: 0 0 0 16px;
+  width: 315px;
+  height: 52px;
+  border: 1px solid $formBorder;
+  font-family: "PT Sans";
+  color: $formText;
+  font-size: 1rem;
+}
+
+.send {
+  display: block;
+  margin: 20px auto;
+  width: 290px;
+  height: 52px;
+  background-color: $greenHeader;
+  border-radius: 2px;
+  color: $white;
+  font-family: "PT Sans";
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  border: none;
+
+  &:hover {
+    background-color: $lightGreen;
+  }
+}
+
+@media (min-width: 992px) {
+  .callback {
+    padding-top: 71px;
+
+    //пройтесь везде, где есть этот контейнер и удалить его если он не нужен (проверить!)
+    .container {
+      width: 1185px;
+    }
+
+    h1 {
+      font-size: 1.95rem;
+      line-height: 2.15rem;
+    }
+
+    p {
+      padding-top: 34px;
+    }
+  }
+
+  .branches {
+    padding: 55px 30px 31px;
+  }
+
+  .reception {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .reception-label {
+    padding-top: 0;
+  }
+
+  .city-select, .name-input, .phone-input {
+    width: 372px;
+  }
+
+  .send {
+    margin: 70px 0 66px -4px;
+    width: 372px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .city-select, .name-input, .phone-input {
+    width: 330px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .callback {
+    padding-top: 30px;
+
+    .container {
+      width: 1185px;
+    }
+
+    h1 {
+      font-size: 1.95rem;
+      line-height: 2.15rem;
+    }
+
+    p {
+      padding-top: 16px;
+    }
+  }
+
+  .branches {
+    padding: 30px 16px 15px;
+  }
+
+  .city-select, .name-input, .phone-input {
+    width: 250px;
+    display: block;
+    padding: 0 0 0 16px;
+    height: 52px;
+    font-size: 1rem;
+  }
+
+  .reception {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .reception-label {
+    padding-top: 0;
+  }
+
+  .send {
+    margin: 25px 0 33px;
+    width: 245px;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  .callback {
+    padding-top: 25px;
+
+    h1 {
+      font-size: 1.95rem;
+      line-height: 2.15rem;
+      letter-spacing: 0.3px;
+    }
+
+    p {
+      padding-top: 20px;
+      font-size: 1.25rem;
+    }
+
+    .branches {
+      padding: 20px 15px 14px;
+    }
+  }
+
+  .city-select, .name-input, .phone-input {
+    font-size: 1.2rem;
+    width: 372px;
+  }
+
+  .reception-label {
+    font-size: 1.3rem;
+  }
+
+  .send {
+    margin: 25px 0 33px;
+    font-size: 1.3rem;
+    width: 372px;
+  }
+}
+
+@media (min-width: 576px) {
+  .branches {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .branch {
+    padding-bottom: 0;
+  }
+}
