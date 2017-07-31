@@ -2,7 +2,11 @@
   color: $darkGrey;
   text-transform: uppercase;
 
-  //только в мобильном, обнуляется в остальных
+  .row {
+    display: flex;
+    align-items: center;
+  }
+
   .logo-box {
     display: flex;
     justify-content: space-between;
@@ -99,7 +103,6 @@
 }
 
 @media (min-width: 992px) and (max-width: 1199px) {
-  //определить что делал этот стиль и применяется ли он
   .col.nav-box {
     margin-left: -30px;
   }
@@ -176,4 +179,3 @@
     }
   }
 }
-

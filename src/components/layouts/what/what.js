@@ -30,7 +30,7 @@
         function draw(timePassed, step, currentPosition, clickedElem) {
             list.style.left = (clickedElem === next) ?
                 currentPosition + (-(timePassed / step)) - ((width / 100)* 2.5) + 'px' :
-                currentPosition + (timePassed / step) + ((width / 100)* 2.5) + 'px';
+                currentPosition + (timePassed / step) + ((width / 100)* 2) + 'px';
         }
     }
 

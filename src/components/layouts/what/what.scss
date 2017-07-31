@@ -37,8 +37,8 @@
 }
 
 .arrow.left {
-  background: url(../img/slider_arr_left.png) no-repeat center center;
-  background-size: contain;
+  background: url(../img/sprite.png) no-repeat 0px;
+  background-size: cover;
 
   &:hover {
     margin-left: -3px;
@@ -46,8 +46,8 @@
 }
 
 .arrow.right {
-  background: url(../img/slider_arr_right.png) no-repeat center center;
-  background-size: contain;
+  background: url(../img/sprite.png) no-repeat -27px;
+  background-size: cover;
 
   &:hover {
     margin-left: 3px;
@@ -82,12 +82,11 @@
 }
 
 .slide.second {
-  background-color: #00b3ff;
-  //background: url("../img/hero_bckgr.png") center center no-repeat;
+  background-color: $lightestGrey;
 }
 
 .slide.third {
-  background-color: #4cb027;
+  background-color: $mediumGrey;
 }
 
 .row.slider_nav {
@@ -160,7 +159,6 @@
 }
 
 @media (min-width: 576px) {
-//@media (min-width: 768px) {
   .what {
     padding: 63px 0 30px;
     .container {
@@ -184,6 +182,11 @@
     width: 66px;
     height: 66px;
     border-radius: 35px;
+  }
+
+  .arrow.right {
+    background: url(../img/sprite.png) no-repeat -60px;
+    background-size: cover;
   }
 
   .col-12.slider-hider {
@@ -253,19 +256,27 @@
   }
 }
 
-//тут все ок, оставить так
 @media (min-width: 992px) and (max-width: 1199px) {
   .arrow {
     width: 53px;
     height: 53px;
   }
+
+  .arrow.right {
+    background: url(../img/sprite.png) no-repeat -48px;
+    background-size: cover;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
-  //учесть все, что отличается здесь и оставить, а остальное включить в медиа кверис большую
   .arrow {
     width: 34px;
     height: 34px;
+  }
+
+  .arrow.right {
+    background: url(../img/sprite.png) no-repeat -30px;
+    background-size: cover;
   }
 
   .slide {
@@ -301,6 +312,11 @@
     width: 18px;
     height: 18px;
     background-size: contain;
+  }
+
+  .arrow.right {
+    background: url(../img/sprite.png) no-repeat -15px;
+    background-size: cover;
   }
 
   .slide {
